@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ColorPicker</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+</head>
+<body>
+    <div class="content">
+        <div class="color" style="height: 25vh; width: 20vw; min-width: 250px;"></div>
+        <h2 id="col"></h2>
+        <div class="btn-container">
+            <button onclick="newColor()" class="action-button shadow animate blue">Ny Färg</button>
+            <button onclick="saveColor()" class="action-button shadow animate red">Spara</button>
+            <button onclick="toClipboard()" class="action-button shadow animate green">Kopiera</button>
+            <button onclick="clearColors()" class="action-button shadow animate yellow">Rensa</button>
+        </div>
+    </div>
+    <h3>Favoriter</h3>
+    <div class="favList container-fluid">
+    </div>
+    <template>
+        <div class="favCont">
+            <div class="favCol"></div>
+            <h3></h3>
+        </div>
+    </template>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
